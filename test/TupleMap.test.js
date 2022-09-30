@@ -13,7 +13,6 @@ const tuples = [
   [null, terms[1]],
   [terms[0], terms[1], terms[2]]
 ]
-const keys = tuples.map(terms => TupleMap.key(terms))
 const values = [0, 1, 2]
 const entries = [
   [tuples[0], values[0]],
@@ -29,7 +28,7 @@ describe('TupleMap', () => {
   it('should fill the map with the given keys and values', () => {
     const map = new TupleMap(entries)
 
-    deepStrictEqual([...map.keys()], keys)
+    deepStrictEqual([...map.keys()], tuples)
     deepStrictEqual([...map.values()], values)
   })
 
@@ -50,7 +49,7 @@ describe('TupleMap', () => {
     })
 
     it('should delete the given couple', () => {
-      const expected = keys.slice()
+      const expected = tuples.slice()
       expected.splice(1, 1)
       const map = new TupleMap(entries)
 

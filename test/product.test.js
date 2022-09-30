@@ -46,7 +46,8 @@ describe('product', () => {
     const score1 = ({ dataset, graph, terms }) => {
       return [
         { dataset, graph, term: terms[0], score: 0.5 },
-        { dataset, graph, term: terms[1], score: 0.5 }
+        { dataset, graph, term: terms[1], score: 0.5 },
+        { dataset, graph, term: terms[2], score: 0.5 }
       ]
     }
     const score2 = ({ dataset, graph, terms }) => {
