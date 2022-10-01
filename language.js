@@ -18,7 +18,7 @@ function language (languages) {
     for (const term of terms) {
       let score = scoreMap.get(term.language)
 
-      if (typeof score === 'undefined' && term.language && wildcardScore) {
+      if (typeof score === 'undefined' && typeof term.language === 'string' && wildcardScore) {
         score = wildcardScore
       }
 

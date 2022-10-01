@@ -61,4 +61,23 @@ describe('language', () => {
     strictEqual(result[1].score, 0.5)
     strictEqual(result[1].term.equals(terms[0]), true)
   })
+
+  it('should score empty languages based on the index of the wildcard', () => {
+    const score = language(['en', '*'])
+    const dataset = rdf.dataset()
+    const terms = [
+      rdf.literal('test', ''),
+      rdf.literal('test', 'en')
+    ]
+
+    const result = sort(score({ dataset, terms }))
+
+    strictEqual(result.length, 2)
+    strictEqual(result[0].dataset, dataset)
+    strictEqual(result[0].score, 1)
+    strictEqual(result[0].term.equals(terms[1]), true)
+    strictEqual(result[1].dataset, dataset)
+    strictEqual(result[1].score, 0.5)
+    strictEqual(result[1].term.equals(terms[0]), true)
+  })
 })
