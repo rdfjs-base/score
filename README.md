@@ -1,5 +1,5 @@
 # @rdfjs/score
-[![build status](https://img.shields.io/github/workflow/status/rdfjs-base/score/Test)](https://github.com/rdfjs-base/score/actions/workflows/test.yaml)
+[![build status](https://img.shields.io/github/actions/workflow/status/rdfjs-base/score/test.yaml?branch=master)](https://github.com/rdfjs-base/score/actions/workflows/test.yaml)
 [![npm version](https://img.shields.io/npm/v/@rdfjs/score.svg)](https://www.npmjs.com/package/@rdfjs/score)
 
 Scores RDF/JS terms inside a dataset
