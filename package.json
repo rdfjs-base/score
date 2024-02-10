@@ -23,17 +23,17 @@
   },
   "homepage": "https://github.com/rdfjs-base/score",
   "dependencies": {
-    "@rdfjs/data-model": "^2.0.1",
-    "@rdfjs/term-map": "^2.0.0",
-    "@rdfjs/term-set": "^2.0.1",
-    "@rdfjs/to-ntriples": "^2.0.0"
+    "@rdfjs/data-model": "^2.0.2",
+    "@rdfjs/term-map": "^2.0.1",
+    "@rdfjs/term-set": "^2.0.2",
+    "@rdfjs/to-ntriples": "^3.0.1"
   },
   "devDependencies": {
-    "@rdfjs/dataset": "^2.0.1",
-    "@rdfjs/environment": "^0.1.1",
-    "@rdfjs/namespace": "^2.0.0",
-    "c8": "^7.12.0",
-    "mocha": "^10.0.0",
-    "stricter-standard": "^0.2.0"
+    "@rdfjs/dataset": "^2.0.2",
+    "@rdfjs/environment": "^1.0.0",
+    "@rdfjs/namespace": "^2.0.1",
+    "c8": "^9.1.0",
+    "mocha": "^10.3.0",
+    "stricter-standard": "^0.3.0"
   }
 }
